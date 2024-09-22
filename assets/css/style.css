@@ -1,0 +1,364 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header .nav {
+    display: flex;
+    gap: 20px;
+}
+
+.header .nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.header .nav a:hover {
+    color: #ffcc00;
+}
+
+.header .profile-cart {
+    display: flex;
+    gap: 20px;
+}
+
+.header .profile-cart a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.header .profile-cart a:hover {
+    color: #ffcc00;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.left-section {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.left-section h1 {
+    font-size: 90px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.left-section .start-shopping-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.left-section .start-shopping-btn:hover {
+    background-color: #555;
+}
+
+.right-section {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.glasses-image {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.trending-section {
+    width: 100%;
+    text-align: left;
+}
+
+.trending-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.trending-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.trending-row {
+    display: flex;
+    gap: 20px;
+}
+
+.trending-item {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+}
+
+.trending-item:hover {
+    transform: translateY(-5px);
+}
+
+.trending-item img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 8px;
+}
+
+.trending-item p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.second-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee 20s linear infinite;
+}
+
+.marquee-content img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+
+.bestsellers-section {
+    margin-top: 40px;
+}
+
+.bestsellers-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.bestsellers-items {
+    display: flex;
+    gap: 20px;
+}
+
+.bestsellers-item {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+}
+
+.bestsellers-item:hover {
+    transform: translateY(-5px);
+}
+
+.bestsellers-item img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 8px;
+}
+
+.bestsellers-item p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.advantages-section {
+    margin-top: 40px;
+}
+
+.advantages-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.advantages-items {
+    display: flex;
+    gap: 20px;
+}
+
+.advantage-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    text-align: center;
+}
+
+.advantage-item:hover {
+    transform: translateY(-5px);
+}
+
+.advantage-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.advantage-item p {
+    font-size: 16px;
+    color: #333;
+}
+
+
+
+.third-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog-section {
+    margin-top: 40px;
+}
+
+.blog-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.blog-items {
+    display: flex;
+    gap: 20px;
+}
+
+.blog-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    text-align: center;
+}
+
+.blog-item:hover {
+    transform: translateY(-5px);
+}
+
+.blog-item img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.blog-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.blog-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+.news-section {
+    margin-top: 40px;
+}
+
+.news-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.news-items {
+    display: flex;
+    gap: 20px;
+}
+
+.news-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    text-align: center;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+}
+
+.news-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.news-item p {
+    font-size: 16px;
+    color: #555;
+}
